@@ -77,8 +77,14 @@ class Member_Controller:
     # 멤버 상세 정보 받아오기
     def detail_member_info(self):
         # self.d = domain.MemberDomain(email,passwd,name,nickname,phonenumber,birthday,address)
-        # cm = Member_Controller.cookie_email  
-        # print("cm",cm.get("email"))
+        cm = Member_Controller.cookie_email  
+        print("cm",cm.get("email"))
+#================================================================
+# cm오류 이해
+# cm이 global로 선언됨. 그래서 괜춘함 => email값을 가지고 있음
+# 처음에 오류가 있더라도 코드 실행시키면 값이 바뀌어서 오류 발생 안함
+# 무시하고 코딩하는게 맞음!!
+#================================================================
         if bool(cm.get("email")):
             result = self.member_model.member_select_one(cm.get("email"))
             print("result",result)

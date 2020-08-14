@@ -1,4 +1,5 @@
-from store import MemberStore
+# from store import MemberStore
+from resAPI import MemberStore
 import domain
 class Member_Model:
 

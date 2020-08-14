@@ -7,14 +7,12 @@ import json
 class MemberStore:
 
 #  modey.py에서 호출하도록 하기
-
     
 #====== 참고 blog==========================================
     # https://twpower.github.io/124-python-requests-usage
     # https://velog.io/@wimes/node.js-REST-API-%EC%84%9C%EB%B2%84-%EB%A7%8C%EB%93%A4%EA%B8%B0-3.-%EB%A7%8C%EB%93%A4%EA%B8%B0
     # https://requests.readthedocs.io/en/latest/user/quickstart/#passing-parameters-in-urls
     # https://my-devblog.tistory.com/27
-
 
 #====== Node.js 작성시 참고사항============================
 #  1. 직접 url창에 /users, /users/1 과 같이 입력하는 대신 
@@ -26,11 +24,11 @@ class MemberStore:
 # 2.  req, res
 #     rea = request(송신) / res = response(수신)
 #     따라서 송신과 수신은 json형태로 주고 받도록 한다.
-#     
+     
 # 3.  entity로 넘겨줄 때 vs email로 넘길 때
 #     entity는 body로, email은 param으로 해체하는 듯 합니다.
 #     사실 뇌피셜이긴 한데...ㅠㅠㅠ일단 강사님 코드는 entity는 body, id는 param으로 해체하셔서 그렇게 넘깁니다.
-# 
+ 
 # 4.  users => users 그대로 사용
 #     id => email = primary key 
 
@@ -47,8 +45,6 @@ class MemberStore:
             api_result = api_result.json()
             return api_result
             # fetchaone으로 가져옴 -> 예상 return email
-
-            
     # 이메일 검증
     def email_Validation(self,email):
         if bool(email):
@@ -75,6 +71,10 @@ class MemberStore:
         # 		[name, email], (error, resutls, fields) => {
         #     if (error) throw error;
         #     res.json({ok:"true"});
+#===================================================================
+#  {ok:True} 값으로 반환해야 할까요??
+#   일단 controller에서는 bool로 받음
+#===================================================================
         #   });
         # });
 
