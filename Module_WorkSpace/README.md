@@ -61,7 +61,6 @@
 	- module2-database-rds
 	* [RDS END POINT]
 	- module2-database-rds.cbip1ztonb0u.us-west-2.rds.amazonaws.com
-	* [
 
 # restAPI
 
