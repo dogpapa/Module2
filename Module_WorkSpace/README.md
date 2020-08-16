@@ -66,5 +66,5 @@
 |추가적으로 전체 목록의 경우|GET|SELECT *ALL*|fetchall()|-|
 
 <span style="color:red">
-*기존 db코드가 dict형식으로 불러왔기 때문에 송신(resAPI)과 수신(index.js)은 json형태로 주고 받도록 한다.*
+ *기존 db코드가 dict형식으로 불러왔기 때문에 송신(resAPI)과 수신(index.js)은 json형태로 주고 받도록 한다.*
 </span>
