@@ -1,5 +1,7 @@
 # 청일점 프로젝트
-# travel community & travel club
+## travel community & travel club
+
+***
 
 # 명세서
 # IAM
@@ -13,6 +15,11 @@
 	- Module2-cloud-watch
 # EC2
 	- module2-ec2-app-server
+	* DNS주소
+	- __Module2-ec2-AScaling__
+	- ec2-54-188-202-108.us-west-2.compute.amazonaws.com
+	- __Module2-ec2-AScaling__
+	- ec2-52-41-209-242.us-west-2.compute.amazonaws.com
 # S3
 	- module2-bucket
 
@@ -49,6 +56,12 @@
 	- Default_CloudWatch_Alarms_Topic-Module2-1
 	* [경보이름]
 	- Module2-CPU-Alarm-1(i-034f7c8c04308efb8)
+# RDS
+	* [RDS명]
+	- module2-database-rds
+	* [RDS END POINT]
+	- module2-database-rds.cbip1ztonb0u.us-west-2.rds.amazonaws.com
+	* [
 
 # restAPI
 
